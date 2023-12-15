@@ -128,6 +128,7 @@ transition: all .3s ease-in-out;
 }
 .color-active-href {
   transition: all .5s ease-in-out;
+  color: #000;
 }
 .color-active-href.web-color {
   background: radial-gradient(circle, #0085FF -6.59%, #b6dcff 50%, #002F67 100%);
@@ -218,11 +219,12 @@ background-attachment: scroll;
 .content h3 a {
   font-size: clamp(14px, 5vw, 42px);
   font-family: 'Montserrat', sans-serif;
+  font-feature-settings: 'salt' on, 'ss01' on;
   font-weight: 400;
   position: relative;
 	color: #000; /*задаём цвет ссылки*/
 	cursor: pointer;
-	line-height: 1; /*задаём высоту строки*/
+	line-height: 0.5; /*задаём высоту строки*/
 	text-decoration: none; /*убираем подчёркивание*/
 }
 .content h3 a:after {
@@ -239,6 +241,21 @@ background-attachment: scroll;
 .content h3 a:hover:after,
 .content h3 a:focus:after {
 	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+
+.works-teg.color-active-href:after
+ {
+  width: 100%;
+}
+
+.contacts-teg.color-active-href:after
+ {
+ width: 100%;
+}
+
+.works-teg.color-active-href:after
+ {
+  width: 100%;
 }
 
 @keyframes gradient2 {

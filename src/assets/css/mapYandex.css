@@ -1,0 +1,34 @@
+
+.mapForContact {
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    margin-top: 5vh;
+}
+
+#MapYandex{
+    width: 100%;
+    height: 100%;
+}
+
+#MapYandex {
+    filter: brightness(20%);
+    -ms-filter: brightness(20%);
+    -webkit-filter: brightness(20%);
+    -moz-filter: brightness(20%);   
+    -o-filter: brightness(20%);  
+    
+    }
+
+    #MapYandex:hover {
+        filter: brightness(70%);
+        -ms-filter: brightness(70%);
+        -webkit-filter: brightness(70%);
+        -moz-filter: brightness(70%);   
+        -o-filter: brightness(70%);  
+        transition: all .8s ease-in-out;
+        
+    }
+    #MapYandex:not(:hover){
+        transition: all .8s ease-in-out; 
+    }

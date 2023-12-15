@@ -26,7 +26,15 @@ background: linear-gradient(90deg, #5A5A5A -44.58%, #9A9A9A 111.54%);
   width: 100%;
   margin: auto;
 }
+.line-upper-footer {
+  width: 90vw;
+  height: 0.4vh;
+  background: #fff;
+  margin: auto;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 
+}
 @keyframes gradient4 {
   0% {
     background-position: 0% 50%;

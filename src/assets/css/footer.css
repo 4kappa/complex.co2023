@@ -14,16 +14,6 @@ footer .blocks-footer {
     justify-content: space-between;
 }
 
-footer .line-upper-footer {
-    width: 90vw;
-    height: 0.4vh;
-    background: #fff;
-    margin: auto;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-
-}
- 
 footer .map {
     width: 40vw;
     height: 40vh;

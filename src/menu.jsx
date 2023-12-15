@@ -28,7 +28,20 @@ const Menu = () => {
           document.getElementById("app-color").classList.add("color-active-href")
           document.getElementById("web-color").classList.remove("color-active-href")
           document.getElementById("design-color").classList.remove("color-active-href")
+        }else if (currentPath == "/contacts"){
+          document.getElementById("contacts-color").classList.add("color-active-href")
+          document.getElementById("works-color").classList.remove("color-active-href")
+          document.getElementById("blog-color").classList.remove("color-active-href")
+        }else if (currentPath == "/works"){
+          document.getElementById("works-color").classList.add("color-active-href")
+          document.getElementById("contacts-color").classList.remove("color-active-href")
+          document.getElementById("blog-color").classList.remove("color-active-href")
+        }else if (currentPath == "/blog"){
+          document.getElementById("blog-color").classList.add("color-active-href")
+          document.getElementById("works-color").classList.remove("color-active-href")
+          document.getElementById("contacts-color").classList.remove("color-active-href")
         }
+
      }
      else {
       document.getElementById("html").classList.remove("off-overflow")
@@ -38,7 +51,7 @@ const Menu = () => {
      setIsMenuClicked(!isMenuClicked)
  }
 
-
+ console.log(currentPath)
 
  return(
  
@@ -75,12 +88,12 @@ const Menu = () => {
         <div className={menu_class}>
           
           <div className="content">
-            <div className="background-sticky">
+            {/* <div className="background-sticky">
             <div className={isMenuClicked ? "background background-go" : "background"}>
             <div className="background-sqr"></div>
             <div className="background-tringled"></div>
           </div>
-            </div>
+            </div> */}
             <div className="navigate">
               <h2><a className='web-color' id='web-color' href="/web-development">WEB-РАЗРАБОТКА</a></h2>
               <h2><a className='design-color' id='design-color' href="/design">DESIGN</a></h2>

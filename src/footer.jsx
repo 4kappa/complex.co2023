@@ -17,7 +17,6 @@ const Footer = () => {
   return (
     <>
     <footer>
-        <div className="line-upper-footer"></div>
         <div className="blocks-footer">
             <div className="map" >
               <div className='active-map' onMouseOver={HoverOnFooterMap} onMouseOut={HoverOffFooterMap}>

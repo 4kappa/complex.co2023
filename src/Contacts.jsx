@@ -5,8 +5,8 @@ import React, { Component } from 'react';
 
 import './assets/css/contacts.css'
 import Menu from './menu.jsx'
+import MapYandex from './mapYandex.jsx'
 import ContactsGlavn from './ContactsGlavn.jsx'
-import Footer from './footer.jsx'
 
 function Contacts() {
   
@@ -24,7 +24,9 @@ function Contacts() {
         <ContactsGlavn/>
 
         </section>
-
+        <section id='fullWindowMap'>
+        <MapYandex />
+        </section>
     </>
   )
 }

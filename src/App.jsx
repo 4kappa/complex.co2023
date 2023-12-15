@@ -54,7 +54,7 @@ function App() {
         <Sale />
         <Team />
 
-
+        <div className="line-upper-footer"></div>
         <Footer />
         </section>
 

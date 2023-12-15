@@ -19,3 +19,125 @@
     width: 50%;
     background: #000;
 }
+
+.form-links {
+    margin-top: 10vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-links .links{
+    width: 50%;
+}
+.form-links .form{
+    width: 50%;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 5vh;
+}
+
+form input {
+    border: 0.2vw solid #0000003c;
+    border-radius: 5vw;
+    width: fit-content;
+    padding: 2vh 2vw 2vh 2vw;
+    font-size: 2vw;
+    line-height: 1vw;
+    font-weight: 400;
+    color: #0000003c;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .3s ease-in-out;
+}
+
+form input:user-invalid{
+    background: radial-gradient(circle, #FF00A8 -6.59%, #fda6e0 50%, #67004A 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 400% 400%;
+  animation: gradient2 15s ease infinite;
+  transform: translate3d(0, 0, 0);
+backdrop-filter: blur(20px);
+transition: all .3s ease-in-out;
+background-attachment: scroll;
+}
+form input:user-valid{
+    background: radial-gradient(circle, #00FF1A -6.59%, #b2f8b9 50%, #00670A 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: gradient2 15s ease infinite;
+    transform: translate3d(0, 0, 0);
+  backdrop-filter: blur(20px);
+  transition: all .3s ease-in-out;
+  background-attachment: scroll;
+}
+form input::placeholder{
+    color: #0000003c !important;
+}
+form input:focus {
+    box-shadow: 0px 0px 50px 10px #0000003c;
+    color: #00000073;
+    background: radial-gradient(circle, #0085FF -6.59%, #b6dcff 50%, #002F67 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 400% 400%;
+    animation: gradient2 15s ease infinite;
+    transform: translate3d(0, 0, 0);
+  backdrop-filter: blur(20px);
+  transition: all .3s ease-in-out;
+  background-attachment: scroll;
+}
+form input:focus::after{
+    color: #000;
+}
+form button {
+    border-radius: 5vw;
+    width: 34vw;
+    height: 10vh;
+    padding: 2vh 2vw 2vh 2vw;
+    font-size: 4vw;
+    line-height: 1vw;
+    font-weight: 600;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .3s ease-in-out;
+    background: radial-gradient(circle, #0085FF -6.59%, #b6dcff 50%, #002F67 100%);
+    background-size: 400% 400%;
+    animation: gradient2 15s ease infinite;
+  transform: translate3d(0, 0, 0);
+backdrop-filter: blur(20px);
+transition: all .3s ease-in-out;
+background-attachment: scroll;  
+}
+form button:hover {
+    animation: gradient2 10s ease infinite;
+    transition: all .3s ease-in-out;
+    box-shadow: 0px 0px 50px 10px #0000003c;
+}
+.map{
+    width: 100vw;
+}
+.map {
+    width:100vw;
+    height: 40vh;
+    overflow: auto;
+    text-align: center ;
+
+}
+
+.active-map {
+    opacity: 0.8;
+    transition: all .5s ease-in-out;
+}
