@@ -1,0 +1,8 @@
+.works-div {
+    margin: 20vh 0 20vh 0;
+    height: 20vh;
+    width: 140vw;
+display: flex;
+justify-content:right;
+align-items: center;
+  }

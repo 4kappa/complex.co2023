@@ -1,0 +1,21 @@
+.text-head h2 {
+    font-size: clamp(20px, 5vw, 64px);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+}
+
+.text-head {
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.line-after {
+    height: 0.4vw;
+    width: 50%;
+    background: #000;
+}

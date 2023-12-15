@@ -1,0 +1,78 @@
+
+
+
+.add {
+    width: 100%;
+    margin: auto;
+    background: url(../public/tringl.png);
+    background-position: 50% 50%;
+    background-size: cover;
+    height: 100vh;
+  }
+  
+  .blocks {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+  }
+  
+  .block-left {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: start;
+    gap: 5vh;
+  }
+  .block-left h2 { 
+    color: #FFF;
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+  .block-left h3 {
+    color: #CECECE;
+    font-family: 'Poppins', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  }
+  .block-right img{
+    width: 110%;
+  }
+  
+  .call-us {
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 14px 22px 14px 22px;
+    background: transparent;
+    border: 3px solid #fff;
+    border-radius: 3px 15px;
+  }
+  
+  .call-us:hover {
+    transition: all .5s ease-in-out;
+    background: #fff;
+    color: #000;
+  }
+  
+  .call-us:not(:hover) {
+    transition: all .3s ease-in-out;
+  }
+  

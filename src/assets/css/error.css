@@ -1,0 +1,41 @@
+.block-error {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10vh;
+}
+#error-page {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.block-error h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(20px, 5vw, 64px);
+    width: 40%;
+}
+
+.block-error a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(14px, 5vw, 40px);
+    color: #000;
+    font-weight: 600;  
+    padding: 1vh 2vw 1vh 2vw;
+    border: clamp(2px, 5vw, 6px) solid #000;  
+}
+
+.block-error a:hover {
+    background: #000;
+    color: #fff;
+    transition: all .5s ease-in-out;
+}
+
+.block-error a:not(:hover) {
+    transition: all .5s ease-in-out;
+} 

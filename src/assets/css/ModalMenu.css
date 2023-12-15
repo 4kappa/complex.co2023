@@ -1,0 +1,114 @@
+.modal {
+    position: fixed;
+    top: 0;
+    right: -110vw;
+
+    transition: all 0.3s ease-in-out;
+    z-index: 6;
+    width: 0vw;
+    height: 100vh;
+    background: rgba(255, 0, 0, 0.325);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+}
+.modal.active-modal-menu {
+    transition: all .3s ease-in-out;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    opacity: 1;
+    overflow: hidden !important;
+
+}
+
+#html.active-modal-menu {
+    overflow: hidden !important;
+}
+
+.modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    cursor: pointer;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+}
+
+
+
+.bars-button .bars{
+    gap: 0px;
+  }
+
+  .bars-button {
+    display: flex;
+    justify-content: space-between;
+    gap: 0px;
+    padding: 0;
+    cursor: pointer;
+    align-items: center;
+    font-size: clamp(16px, 5vw ,32px);
+    transition: all .3s ease-in-out;
+  }
+  
+  .bars-button .bars {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0px;
+
+  }
+  .bars-button .bars:hover {
+    transition: all .3s ease-in-out;
+    gap: 7px;
+
+  }
+  .bars-button .bars:not(:hover) {
+    transition: all .3s ease-in-out;
+
+  }
+  
+ .bars-button .barsolo {
+    background: #000;
+    height: 0.4vh;
+    width: 2.4vw;
+  }
+  
+  .bars-menu{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+  }
+
+  .close-wrap {
+    width: 90%;
+    margin: auto;
+    height: 50px;
+  }
+
+  .bars-menu .close-btn {
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .bars-menu .close-btn button {
+    background: transparent;
+    border: transparent;
+    cursor: pointer;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .onDisplay {
+    display: none;
+    opacity: 0;
+    transition: all .3s ease-in-out;
+  }

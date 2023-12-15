@@ -1,0 +1,189 @@
+
+.team {
+  width: 95%;
+  height: 64vh;
+  margin: auto;
+}
+.team-blocks {
+  width: 100%;
+  display: flex;
+}
+
+.team-text {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4vh;
+
+}
+
+.team-text h2 {
+  color: #FFF;
+  font-family: 'Montserrat', sans-serif;
+font-size: 64px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+
+.team-text h3{
+  color: #DEDEDE;
+  font-family: 'Montserrat', sans-serif;
+font-size: 32px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+.team-collaps .card:hover {
+  border-radius: 3px 3px 3px 25px;
+background-image: url(../public/techno/pngwing1.png);
+background-position: 50% 50%;
+background-size: cover;
+width: 24vw;
+height: 65vh;
+margin: auto;
+display: flex;
+justify-content: center;
+align-items: end;
+padding-bottom: 8vh;
+
+transition: all .5s ease-in-out;
+cursor: pointer;
+}
+.team-collaps .card:not(:hover){
+  transition: all .5s ease-in-out;
+}
+
+.card {
+  background-image: url(../public/techno/pngwing2.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  width: 20vw;
+  height: 60vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  padding-bottom: 6vh;
+  border-radius: 3px 3px 3px 25px;
+  opacity: 0.8;
+  transition: all .5s ease-in-out;
+  }
+  .card .about {
+    background: #262626;
+    width: 18vw;
+    border-radius: 10px;
+    opacity: 0.6;
+    margin: auto;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 1vh;
+padding: 2vh 0 2vh 0;
+position: absolute;
+transition: all .5s ease-in-out;
+  }
+  .card .about .techno img {
+    width: 2vw;
+    transition: all .5s ease-in-out;
+  }
+  .card .about .fio {
+    font-size: clamp(12px, 5vw ,18px);
+    transition: all .5s  ease-in-out;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .5s ease-in-out;
+  }
+  .card .about .job {
+    font-size: clamp(8px, 5vw ,12px);
+    transition: all .5s  ease-in-out;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    transition: all .5s ease-in-out;
+  }
+
+
+.team-collaps {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5vw;
+}
+
+.card:hover .about{
+opacity: 0.9;
+background: #262626;
+width: 20vw;
+}
+
+.card:not(:hover) .about {
+  transition: all .5s ease-in-out;
+}
+
+.card:hover .about .fio {
+  color: #FFF;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+font-size: 24px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+transition: all .5s ease-in-out;
+}
+.card:not(:hover) .about .fio {
+  transition: all .5s ease-in-out;
+}
+
+.card:hover .about .job {
+  color: #FFF;
+text-align: center;
+font-family: 'Montserrat', sans-serif;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+transition: all .5s ease-in-out;
+}
+
+.card:hover .about .techno {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.2vw;
+  align-items: center;
+  transition: all .5s ease-in-out;
+}
+
+.card:hover .about .techno img {
+  width: 2.4vw;
+  transition: all .5s ease-in-out;
+}
+.card:not(:hover ) .about .techno img  {
+  transition: all .5s ease-in-out;
+}
+
+.team-collaps .card:hover .photo-who{
+  display: flex;
+  width: 20vw;
+  height: 60vh;
+  margin: auto;
+  scale: 1.1;
+  text-align: center;
+  justify-content: start;
+  align-items: start;
+
+}
+
+
+
+
+
+
+

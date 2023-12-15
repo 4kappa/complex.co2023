@@ -1,0 +1,85 @@
+
+
+.sale {
+    width: 100%;
+    height: 100%;
+    background-image: url(../public/procent.png);
+    background-repeat: no-repeat;
+    background-size: 20%;
+    background-position: 100% 50%;
+  }
+  
+  .blocks-sale {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 90vw;
+    margin: auto;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    gap: 5vw;
+  }
+  
+  .blocks-sale .bag-block {
+    width: 40vw;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+  }
+  .blocks-sale .bag-block img{
+    width: 28vw;
+    text-align: right;
+  }
+  
+  .blocks-sale .text-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+  
+  }
+  
+  .blocks-sale .text-block h2 {
+    color: #FFF;
+    font-family: 'Montserrat', sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  text-align: left;
+  font-weight: 700;
+  line-height: normal;
+  width: 100%;
+  }
+  
+  .blocks-sale .text-block h3 {
+    width: 100%;
+    text-wrap: wrap;
+    color: #FFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    text-align: left;
+    font-weight: 500;
+    line-height: 70px; /* 175% */
+  }
+  
+  .blocks-sale .text-block h3 strong {
+    padding: 1vh 2vw 1vh 2vw;
+    border: 5px solid #6663FE;
+    background: linear-gradient(90deg, #b2b2b2 -44.58%, #dbdbdb 111.54%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all .5s ease-in-out;
+    opacity: 0.5;
+    cursor: pointer;
+  }
+  
+  .blocks-sale .text-block h3 strong:hover {
+    opacity: 1;
+    transition: all .5s ease-in-out;
+  }
+  
+  .blocks-sale .text-block h3 strong:not(:hover){
+    transition: all .5s ease-in-out;
+  }
