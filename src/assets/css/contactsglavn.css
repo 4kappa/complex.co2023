@@ -141,3 +141,8 @@ form button:hover {
     opacity: 0.8;
     transition: all .5s ease-in-out;
 }
+
+.active-btn {
+    background: red;
+    color: #000;
+}

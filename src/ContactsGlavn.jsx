@@ -1,19 +1,9 @@
 import React, { Component } from 'react';
-import { YMaps, Map, Placemark } from '@pbe/react-yandex-maps';
+import axios from 'axios';
 import './assets/css/contactsglavn.css'
-const ContactsGlavn = () => {
-    const defaultState = {
-        center: [51.818422, 55.1481051],
-        zoom: 15,
-      
-      };
-      function HoverOnFooterMap(){
-        document.getElementById("WebHover").classList.remove("active-map")
-      }
-      function HoverOffFooterMap(){
-        document.getElementById("WebHover").classList.add("active-map")
-      }
-      return(
+function ContactsGlavn() {
+   
+      return (
         <>
         <section>
                 <div className="text-head">
@@ -25,18 +15,18 @@ const ContactsGlavn = () => {
                         
                     </div>
                     <div className="form">
-                        <form action="POST">
-                            <input type="text" placeholder='Как к вам обращаться' />
-                            <input type="text" placeholder='Ваша почта' />
-                            <input type="text" placeholder='Ваш вопрос' />
-                            <button type="submit">ОТПРАВИТЬ</button>
+                        <form id='tg-form'>
+                            <input type="text" name='name' placeholder='Как к вам обращаться' />
+                            <input type="text" name='email' placeholder='Ваша почта' />
+                            <input type="text" name='qustion' placeholder='Ваш вопрос' />
+                            <button id='submit-btn' type="submit">ОТПРАВИТЬ</button>
                         </form>
                     </div>
                 </div>
         </section>
         </>
-    ) 
-    
+    )  
 }
+export default ContactsGlavn
 
-export default ContactsGlavn;
+

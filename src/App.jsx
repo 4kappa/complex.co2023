@@ -13,6 +13,8 @@ import AddBanner from './AddBanner.jsx'
 import ScrollerText from './ScrollerText.jsx'
 import Sale from './Sale.jsx'
 import { useInView } from "react-intersection-observer";
+import {Circle} from 'react-preloaders';
+
 
 
 function App() {
@@ -35,6 +37,8 @@ function App() {
     
   return (
     <>
+    <Circle time={0}  animation="fade"/>
+
     <section className={inView? "menu-bar onWhite" : "menu-bar" } transition={{ delay: 0.8, duration: 0.5, ease: "easeOut" }}>
     <Menu />
 
